@@ -44,7 +44,7 @@ It’s a message in the form of a meme.
 It’s a reminder that what truly matters — can’t be bought.`,
     faqProfQuestion: "Хочешь узнать больше?",
 faqProfTitle: "Технология постоянного развития",
-faqProfText: `У <strong>$PRICELESS</strong> есть собственный Telegram-бот — <a href="https://t.me/moriappbot" target="_blank"><span style="color: #ff8730;">@moriappbot</a><br>
+faqProfText: `У <strong>$PRICELESS</strong> есть собственный Telegram-бот — <a href="https://t.me/#" target="_blank"><span style="color: #ff8730;">@moriappbot</a><br>
 В первую неделю после запуска бот собрал <strong>100 000+</strong> пользователей.<strong><br><br>Внутри:</strong><br>- система XP (опыта) и Энергии<br>- XP начисляется за выполнение заданий, которые распространяют мем и качают комьюнити<br>- Энергия даётся за приглашения новых участников<br><br>Заработанные ресурсы можно обменять на призы и <strong>$PRICELESS</strong> после листинга.<br>Механика работает как снежный ком: чем активнее комьюнити — тем быстрее рост.<strong><br><br>Ценности и идея:</strong><br>Каждый, кто держит $PRICELESS, автоматически становится участником Лиги Выдающихся Джентльменов.<br>1% с каждой транзакции отправляются в фонд Лиги.<br><br><strong>Куда идут эти средства?</strong><br>Отслеживай распределение на сайте ЛВД<br><strong> — Утилити и реальная польза</strong>
 $PRICELESS будет интегрирована в экосистему Профессора как средство оплаты его сервисов.<br>Этими услугами уже пользуются миллионы людей.
 Больше информации — в ROADMAP.`,
@@ -111,7 +111,7 @@ faqAnswers: [
 ],
 communityIconsHTML: `
   <div class="community__icon-block">
-  <a href="https://t.me/MORIAPPBOT" target="_blank" rel="noopener noreferrer">
+  <a href="https://t.me/#" target="_blank" rel="noopener noreferrer">
     <img src="images/tgbot.png" alt="YouTube" class="community__icon" />
     <p class="community__icon-small">Телеграм Бот</p>
     <p class="community__icon-big">$PRICELESS COIN</p>
@@ -271,9 +271,9 @@ faqAnswers: [
 ],
 communityIconsHTML: `
   <div class="community__icon-block">
-  <a href="https://t.me/MORIAPPBOT" target="_blank" rel="noopener noreferrer">
+  <a href="https://t.me/#" target="_blank" rel="noopener noreferrer">
     <img src="images/tgbot.png" alt="YouTube" class="community__icon" />
-    <p class="community__icon-small">Telegram SYSTEM BOT</p>
+    <p class="community__icon-small">Telegram</p>
     <p class="community__icon-big">$PRICELESS COIN</p>
   </a>
 </div>
