@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>$PRICELESS Coin </title>
+   <link rel="icon" href="images/logo.png" type="image/x-icon">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .language-switch {
+    display: none;
+}
+.image-part.part5 {
+  transform-origin: 25.16% 30.93%;
+  animation: none;
+  pointer-events: none;
+  z-index: 9999;
+}
+.image-part.part4:hover + .image-part.part5 {
+  animation: spinBlink 10s linear infinite;
+}
+@keyframes spinBlink {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+</style>
+
+<style>
+.image-part.part4 {
+  transition: filter 0.5s ease !important;
+  pointer-events: auto !important;
+}
+
+.image-part.part4:hover {
+  filter: brightness(1.3) drop-shadow(0 0 25px rgba(255,255,255,0.9)) !important;
+}
+  </style>
+  <style>
+    .mobile-image-container {
+    display: none; 
+}
+   @media (max-width: 768px) {
+  @media (max-width: 768px) {
+  .hero__image {
+    display: none !important;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero__content {
+    max-width: 100%;
+    order: 1;
+  }
+  .mobile-image-container {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    order: 2;
+  }
+}
+  </style>
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <div class="header__logo" style="cursor:pointer;">
+  <img src="images/logo.jpg" alt="Логотип " id="logo-reload">
+</div>
+<script>
+  document.getElementById('logo-reload').onclick = () => location.reload();
+</script>
+    <div class="header__right">
+      <div class="language-switch">
+  <button id="lang-ru" class="lang-btn">RU</button>
+  <span class="lang-divider">|</span>
+  <button id="lang-en" class="lang-btn">EN</button>
+</div>
+      <button class="header__buy-btn" onclick="window.open('https://jup.ag/swap/SOL-8ZHE4ow1a2jjxuoMfyExuNamQNALv5ekZhsBn5nMDf5e', '_blank')">
+  КУПИТЬ $PRICELESS
+</button>
+     <div class="social-icons">
+  <a href="https://twitter.com/i/communities/1941457913710813465" class="social-icon" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-x-twitter"></i>
+  </a>
+  <a href="https://www.youtube.com/#" class="social-icon" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-youtube"></i>
+  </a>
+  <a href="https://t.me/#" class="social-icon" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-telegram-plane"></i>
+  </a>
+</div>
+
+      <button class="menu-toggle" id="menuToggle">
+        <span class="menu-toggle__bar"></span>
+        <span class="menu-toggle__bar"></span>
+        <span class="menu-toggle__bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Боковое меню -->
+  <nav class="side-menu" id="sideMenu">
+    <div class="side-menu__header">
+      <h2 class="side-menu__title">PRICELESS COIN</h2>
+      <button class="side-menu__close" id="closeMenu">&times;</button>
+    </div>
+    <ul class="side-menu__links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#sozdatel">
+What is $PRICELESS?</a></li>
+      <li><a href="#tokenim">Tokenomics</a></li> 
+      <li><a href="#buy">How to buy</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#community">Community</a></li>
+    </ul>
+    <div class="side-menu__footer">
+      <p> </p>
+      <div class="side-menu__socials">
+  <a href="https://www.youtube.com/@mori_coin" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-youtube"></i>
+  </a>
+  <a href="https://twitter.com/i/communities/1941457913710813465" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-x-twitter"></i>
+  </a>
+  <a href="https://t.me/#" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-telegram-plane"></i>
+  </a>
+</div>
+    </div>
+  </nav>
+
+  <!-- Секция "Главная" (Hero) --> 
+<section id="home" class="hero">
+  <div class="hero__content">
+    <h3 class="hero__title">$PRICELESS Coin</h3>
+    <p class="hero__subtitle">
+      Мемкоин главного <span class="mobile-break">злодея и супергероя<br />
+      русского интернета — Профессора Мориарти</span>
+    </p>
+<div class="buy-button-wrap">
+  <button class="btn-part top-part" onclick="window.open('https://jup.ag/swap/SOL-8ZHE4ow1a2jjxuoMfyExuNamQNALv5ekZhsBn5nMDf5e', '_blank')">
+  <i class="fas fa-credit-card"></i>
+  <span>КУПИТЬ $PRICELESS</span>
+</button>
+
+  <div class="btn-divider-line"></div>
+
+  <button class="btn-part bottom-part" onclick="copyContractAddress()">
+    <span class="contract-label">Контракт:</span>
+    <span class="contract-address" id="mori-address" data-full="8ZHE4ow1a2jjxuoMfyExuNamQNALv5ekZhsBn5nMDf5e">8ZH...Df5e</span>
+
+    <span class="copy-icon" id="copy-icon">
+      <i class="fas fa-copy"></i>
+    </span>
+  </button>
+</div>
+    
+  </div>
+
+
+  <div class="hero__image">
+    
+    <img class="image-part part3" src="images/part3.webp" alt="Часть 3" style="margin-left: -10px;margin-top: 110px;">
+    <img class="image-part part4" src="images/logo.png" alt="Часть 4" style="margin-left: -10px;margin-top: 110px; >
+    <img class="image-part part5" src="images/part5.png" alt="Часть 5" style="margin-left: -10px;margin-top: 110px; position: relative; z-index: 9999;">
+    
+  </div>
+  <div class="bottom-right-image">
+    <img src="images/smoke.png" alt="smoke">
+  </div>
+<div class="mobile-image-container">
+    <img src="images/mori12111.png" alt=" Art" class="mobile-image">
+</div>
+
+</section>
+<section id="sozdatel" class="section-about0">
+  <h3 class="tokenh4">О токене</h3>
+
+   
+  <div class="about__wrapper0">
+    <div class="about__image0">
+    <img src="images/3.jpg" alt="MORI" />
+  </div>
+    <div class="glow-curve11"></div>
+    <div class="about__content0">
+      <h2 class="about__title0">Что такое $PRICELESS?</h2>
+      <p class="about__text0">
+        <strong>$PRICELESS — это мемтокен, построенный на идее влияния.</strong>
+
+2% с каждой транзакции направляется в фонд Лиги Выдающихся Джентльменов. Эти средства идут на реальные инициативы: помощь врачам, поддержку спортсменов, оплату образования и локальных проектов.<br>
+
+Но главное — $PRICELESS не просто про добрые дела. Это инструмент. С его помощью ты становишься участником теневой системы, которая работает без лидеров и обещаний. Здесь действует правило: тот, кто в игре — получает.<br>
+
+<strong>Мы не обещаем иксы. Но даём механики.</strong><br>
+    </div>
+  </div>
+</section>
+<section id="sozdatelj" class="section-about01">
+<div class="faq-lists">
+      <!-- FAQ Item 1 -->
+      <div class="faq-items">
+        
+        <div class="faq-questions">
+          <span class="faq-question-texts">Хочешь узнать, кто стоит за этим?</span>
+          <div class="faq-toggle-circles">
+            <span class="faq-toggle-symbols"></span>
+          </div>
+  <img src="images/logo.png" alt="Coin Peeking" class="coin-peek">
+        </div>
+        <div class="faq-answers">
+          <div class="about__content01">
+            <img class="coin coin--smalls" src="images/logo.png" alt="Coin Small">
+      <h2 class="about__title0">О Мориарти, как о создателе</h2>
+      <p class="about__text0">
+        <strong>Профессор Мориарти – создатель и провидец $PRICELESS Coin</strong>
+<strong>Тот, кто всегда на шаг впереди</strong>
+
+$PRICELESS Coin — это не просто мемкоин. Это финансовый инструмент, созданный мастером-стратегом, человеком, который всегда видит игру дальше, чем остальные. Профессор Мориарти — не просто владелец токена, он архитектор новой теневой экономики, построенной на принципах интеллекта, власти и скрытых возможностей.<br><br>
+
+<strong>Идеология и видение</strong><br>
+
+Профессор Мориарти никогда не следовал чужим правилам — он создал свои собственные. Этот принцип лег в основу $PRICELESS Coin. Этот токен — не просто актив; это цифровая валюта элиты, инструмент для тех, кто мыслит стратегически и понимает, что истинная сила заключается в контроле над информацией и ресурсами.<br><br>
+
+Каждый владелец $PRICELESS Coin становится частью «Лиги выдающихся джентльменов» — сообщества, объединяющего самых прогрессивных игроков крипторынка. Здесь нет случайных людей — только те, кто понимает истинную мощь теневых механизмов.
+</p>
+    </div>
+        </div>
+      </div>
+    </div>
+    <h3 class="tokenh3"style="">Токеномика</h3>
+</section>
+    <!-- Секция "Токеномика" -->
+  <section id="tokenim" class="tokenomics-section" style="
+    
+">
+    
+  <div class="tokenomics-section__content">
+  <div class="tokenomics-svg-wrapper">
+  <svg class="tokenomics-pie" viewBox="0 0 42 42" width="240" height="240">
+    <!-- Сектор 1: 40% -->
+    <circle r="15.915" cx="21" cy="21" fill="transparent"
+      stroke="#f4c430" stroke-width="12"
+      stroke-dasharray="40 60" stroke-dashoffset="0" />
+
+    <!-- Сектор 2: 20% -->
+    <circle r="15.915" cx="21" cy="21" fill="transparent"
+      stroke="#f4c430" stroke-width="12"
+      stroke-dasharray="20 80" stroke-dashoffset="-40" />
+
+    <!-- Сектор 3: 20% -->
+    <circle r="15.915" cx="21" cy="21" fill="transparent"
+      stroke="#f4c430" stroke-width="12"
+      stroke-dasharray="20 80" stroke-dashoffset="-60" />
+
+    <!-- Сектор 4: 10% -->
+    <circle r="15.915" cx="21" cy="21" fill="transparent"
+      stroke="#a77d15" stroke-width="12"
+      stroke-dasharray="10 90" stroke-dashoffset="-80" />
+
+    <!-- Сектор 5: 10% -->
+    <circle r="15.915" cx="21" cy="21" fill="transparent"
+      stroke="#85640e" stroke-width="12"
+      stroke-dasharray="10 90" stroke-dashoffset="-90" />
+  </svg>
+  <svg viewBox="0 0 240 240" width="240" height="240">
+  <!-- Центр круга -->
+  <circle cx="120" cy="120" r="80" fill="none" stroke="#000" stroke-width="0" />
+  <!-- Картинка монеты по центру -->
+  <img src="images/coin_right2.png" alt="PRICELESS COIN" class="tokenomics-center-coin">
+</svg>
+</div>
+
+  <!-- 1. Линия над сектором 40% (верх) -->
+  <div class="tokenomics-containers">
+  <!-- 1. Верх — Public Sale -->
+
+  
+
+<!-- 2. Право-низ — Liquidity -->
+<svg class="my-lines-svg1" viewBox="0 0 240 240" width="240" height="240">
+  <line x1="195" y1="80" x2="210" y2="70" stroke="#939393" stroke-width="1.5" />
+  <line x1="210" y1="70" x2="230" y2="70" stroke="#939393" stroke-width="1.5" />
+</svg>
+  <svg class="my-lines-text1" viewBox="0 0 240 240" width="420" height="420">
+  <text class="token-line-label2" x="200" y="65" fill="#939393" font-size="10" font-family="sans-serif">Reserve</text>
+</svg>
+
+<!-- 3. Низ — Marketing -->
+<svg class="my-lines-svg2" viewBox="0 0 240 240" width="240" height="240">
+  <line x1="180" y1="160" x2="195" y2="175" stroke="#939393" stroke-width="1.5" />
+  <line x1="195" y1="175" x2="215" y2="175" stroke="#939393" stroke-width="1.5" />
+</svg>
+  <svg class="my-lines-text2" viewBox="0 0 240 240" width="420" height="420">
+  <text class="token-line-label3" x="0" y="125" fill="#939393" font-size="10" font-family="sans-serif">Token liquidity</text>
+</svg>
+
+<!-- 4. Низ-слева — Reserve -->
+
+  
+
+<!-- 5. Лево —  -->
+<svg class="my-lines-svg4" viewBox="0 0 240 240" width="240" height="240">
+  <line x1="120" y1="20" x2="120" y2="0" stroke="#939393" stroke-width="1.5"></line>
+  <line x1="120" y1="0" x2="150" y2="0" stroke="#939393" stroke-width="1.5"></line>
+</svg>
+  <svg class="my-lines-text4" viewBox="0 0 240 240" width="420" height="420">
+  <text class="token-line-label5" x="0" y="125" fill="#939393" font-size="10" font-family="sans-serif"></text>
+</svg>
+
+  
+</div>
+
+
+
+
+
+
+    <div class="tokenomics-items">
+
+      <!-- Блок 1 -->
+      <div class="tokenomics-item">
+        <h3 class="tokenomics-item__title">80%</h3>
+        <p class="tokenomics-item__desc">Ликвидность (LOCK на год)</p>
+      </div>
+      <!-- Блок 2 -->
+      <div class="tokenomics-item">
+        <h3 class="tokenomics-item__title">10%</h3>
+        <p class="tokenomics-item__desc">Профессор Мориарти (LOCK на год)</p>
+      </div>
+      <!-- Блок 3 -->
+      <div class="tokenomics-item">
+        <h3 class="tokenomics-item__title">10%</h3>
+        <p class="tokenomics-item__desc">Аирдропы, маркетинг, партнёрства</p>
+      </div>
+    </div>
+
+    <!-- Кнопка в центре -->
+    <button class="tokenomics-btn" onclick="window.open('https://jup.ag/tokens/000', '_blank')">Проверить контракт</button>
+
+
+    <!-- Подпись с небольшим текстом -->
+    
+  </div>
+</section>
+<section id="plan" class="roam_secti">
+  <h2 class="roadmap-title" style="margin-top: 100px;">План развития проекта</h2>
+  <p class="coming_soon">COMING SOON</p>
+  <div class="roadmap-container" style="margin-top: -200px;">
+  
+  <div class="mobile-slider-wrapper">
+  
+  <div class="mobile-title" style="margin-top:-10px;" id="mobileTitle">Coming Soon</div>
+
+  <div class="mobile-line">
+    <div class="mobile-dot"></div>
+  </div>
+
+  <div class="mobile-text" id="mobileText">
+    
+  </div>
+</div>
+ 
+
+
+</section>
+
+
+
+
+
+  <!-- Секция "Как купить?" -->
+<section id="buy" class="section-buy">
+  <!-- Декоративные монеты слева -->
+  <div class="faq__coins1 faq__coins--left1" style="margin-top: 430px;z-index: 2;">
+    <img src="images/coin_left1.png" alt="Coin Left 2">
+  </div>
+  
+  <!-- Декоративные монеты справа -->
+  <div class="faq__coins1 faq__coins--right1">
+    <img src="images/coin_right2.png" alt="Coin Right 1" style="max-width: 200px;">
+  </div>
+  <div class="buy__wrapper">
+    <h2 class="buy__title">Как купить $PRICELESS Coin?</h2>
+    <div class="buy__blocks">
+      <!-- Блок 1 -->
+      <div class="buy-block">
+        <div class="buy-block__number">1</div>
+        <p>Установи TON Wallet<br>(Tonkeeper, MyTonWallet).</p>
+      </div>
+      <!-- Блок 2 -->
+      <div class="buy-block">
+        <div class="buy-block__number">2</div>
+        <p>Пополни баланс TON.</p>
+      </div>
+      <!-- Блок 3 -->
+      <div class="buy-block">
+        <div class="buy-block__number">3</div>
+        <p>Зайди на TON DEX<br>(DeDust, STON.fi).</p>
+      </div>
+      <!-- Блок 4 -->
+      <div class="buy-block">
+        <div class="buy-block__number">4</div>
+        <p>Найди $PRICELESS и стань частью сообщества.</p>
+      </div>
+    </div>
+    <!-- Кнопка по центру -->
+    <div class="buy__button">
+      <button class="btn-buy-dex" onclick="window.open('https://jup.ag/swap/SOL-8ZHE4ow1a2jjxuoMfyExuNamQNALv5ekZhsBn5nMDf5e', '_blank')">
+  Купить $PRICELESS
+</button>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Секция FAQ -->
+<section id="faq" class="faq-section">
+  <!-- Декоративные монеты слева -->
+  <div class="faq__coins123 faq__coins--left" style="margin-top: 1330px;margin-left: -30px;">
+    <img src="images/coin_left2.png" alt="Coin Left 2">
+  </div>
+  
+  <!-- Декоративные монеты справа -->
+  <div class="faq__coins faq__coins--right">
+    <img src="images/coin_right1.png" alt="Coin Right 1" style="margin-left: 1700px;">
+    
+  </div>
+  <div class="faq-container">
+    <!-- Заголовок секции -->
+    <h2 class="faq-title">FAQ</h2>
+    
+    <!-- Список FAQ-блоков -->
+    <div class="faq-list">
+      <!-- FAQ Item 1 -->
+      <div class="faq-item">
+        <div class="faq-question">
+          <span class="faq-question-text">Что такое $PRICELESS Coin?</span>
+          <div class="faq-toggle-circle">
+            <span class="faq-toggle-symbol">+</span>
+          </div>
+        </div>
+        <div class="faq-answer">
+          <p>$PRICELESS Coin – это мемкоин, основанный на образе Профессора Мориарти, гения теневых стратегий, мастера скрытых механизмов и человека, который всегда на шаг впереди. Это не просто криптовалюта – это цифровая валюта элиты теневого мира, связанная с экосистемой Лиги Выдающихся Джентльменов. <br><br>
+          
+          Те, кто владеют $PRICELESS, становятся частью закрытого интеллектуального клуба, в котором информация и ресурсы играют главную роль.
+          </p>
+        </div>
+      </div>
+      
+      <!-- FAQ Item 2 -->
+      <div class="faq-item">
+        <div class="faq-question">
+          <span class="faq-question-text">В каких сетях доступен $PRICELESS?</span>
+          <div class="faq-toggle-circle">
+            <span class="faq-toggle-symbol">+</span>
+          </div>
+        </div>
+        <div class="faq-answer">
+          <p>$PRICELESS Coin доступен в двух сетях:<br>
+          • TON (The Open Network) – блокчейн для быстрых транзакций и приватности.<br>
+          • SOLANA – мощная экосистема для децентрализованных финансов и торговли.
+          </p>
+        </div>
+      </div>
+      
+      <!-- FAQ Item 3 -->
+      <div class="faq-item">
+        <div class="faq-question">
+          <span class="faq-question-text">Как купить $PRICELESS Coin?</span>
+          <div class="faq-toggle-circle">
+            <span class="faq-toggle-symbol">+</span>
+          </div>
+        </div>
+        <div class="faq-answer">
+          <p>Вы можете приобрести токен на TON или SOLANA – подробные инструкции в этом разделе (тут будет ссылка).</p>
+        </div>
+      </div>
+      
+      <!-- FAQ Item 4 -->
+      <div class="faq-item">
+        <div class="faq-question">
+          <span class="faq-question-text">Какая комиссия взымается при покупке?</span>
+          <div class="faq-toggle-circle">
+            <span class="faq-toggle-symbol">+</span>
+          </div>
+        </div>
+        <div class="faq-answer">
+          <p>С каждой транзакции взымается комиссия 3%:<br>
+          • 2% направляется в ликвидность, поддерживая стабильность курса.<br>
+          • 1% уходит в фонд Лиги Выдающихся Джентльменов, и распределяется на благотворительность.</p>
+        </div>
+      </div>
+      
+      <!-- FAQ Item 5 -->
+      <div class="faq-item">
+        <div class="faq-question">
+          <span class="faq-question-text">Где хранить $PRICELESS Coin?</span>
+          <div class="faq-toggle-circle">
+            <span class="faq-toggle-symbol">+</span>
+          </div>
+        </div>
+        <div class="faq-answer">
+          <p>• TON: В приложение Telegram, MyTonWallet, Tonkeeper, Tonhub.<br>
+             • SOLANA: Phantom, Solflare, Trust Wallet.</p>
+        </div>
+      </div>
+      <!-- FAQ Item 6 -->
+      <div class="faq-item">
+        <div class="faq-question">
+          <span class="faq-question-text">Можно ли продать токен обратно?</span>
+          <div class="faq-toggle-circle">
+            <span class="faq-toggle-symbol">+</span>
+          </div>
+        </div>
+        <div class="faq-answer">
+          <p>Да, $PRICELESS Coin можно обменять обратно на TON или SOL через поддерживаемые DEX-платформы.</p>
+        </div>
+      </div>
+      <!-- FAQ Item 7 -->
+      <div class="faq-item">
+        <div class="faq-question">
+          <span class="faq-question-text">Насколько безопасно владеть $PRICELESS?</span>
+          <div class="faq-toggle-circle">
+            <span class="faq-toggle-symbol">+</span>
+          </div>
+        </div>
+        <div class="faq-answer">
+          <p>Контракты токена открыты для проверки, но, как и с любой криптовалютой, всегда инвестируйте ответственно.</p>
+        </div>
+      </div>
+      <!-- FAQ Item 8 -->
+      <div class="faq-item">
+        <div class="faq-question">
+          <span class="faq-question-text">Где следить за новостями проекта?</span>
+          <div class="faq-toggle-circle">
+            <span class="faq-toggle-symbol">+</span>
+          </div>
+        </div>
+        <div class="faq-answer">
+          <p>• Telegram<br>
+             • Twitter<br>
+             • YouTube</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h3 class="tokenh31">Сообщество</h3>
+</section>
+
+
+  <!-- Секция "Сообщество" -->
+<section id="community" class="section-community">
+  <div class="community__wrapper">
+    <h2 class="community__title">PRICELESS COIN</h2>
+    <p class="community__subtitle"> </p>
+    
+    <div class="community__icons">
+      <!-- Блок 1: YouTube -->
+      <div class="community__icon-block">
+        <img src="images/youtube.png" alt="YouTube" class="community__icon" />
+        <p class="community__icon-small">YouTube канал</p>
+        <p class="community__icon-big">МОРИАРТИ</p>
+      </div>
+      <!-- Блок 2: Telegram -->
+      <div class="community__icon-block">
+        <img src="images/telegram.png" alt="Telegram" class="community__icon" />
+        <p class="community__icon-small">Телеграм канал</p>
+        <p class="community__icon-big">ЗАПИСКИ ПРОФЕССОРА</p>
+      </div>
+      <!-- Блок 3: X (Twitter) -->
+      <div class="community__icon-block">
+        <img src="images/x.png" alt="x" class="community__icon" />
+        <p class="community__icon-small">Телеграм канал</p>
+        <p class="community__icon-big">МОРИАРТИ</p>
+      </div>
+      <div class="community__icon-block">
+  <a href="https://youtube.com/#" target="_blank" rel="noopener noreferrer">
+    <img src="images/youtube.png" alt="YouTube" class="community__icon" />
+    <p class="community__icon-small">Телеграм Бот</p>
+    <p class="community__icon-big">$PRICELESS COIN</p>
+  </a>
+</div>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  
+  <div class="footer__wrapper">
+    <div class="footer__left">
+      <div class="footer__contacts">
+        <h3 class="footer__contacts-title">Контакты:</h3>
+        <ul class="footer__contacts-list">
+          <li><a href="https://t.me/YourTelegram" target="_blank">Telegram</a></li>
+          <li><a href="https://twitter.com/YourTwitter" target="_blank">Twitter (X)</a></li>
+          <li><a href="https://www.youtube.com/YourChannel" target="_blank">YouTube</a></li>
+        </ul>
+      </div>
+      <div class="footer__disclaimer">
+        <p>«PRICELESS COIN не является ценной бумагой и используется исключительно в рамках экосистемы»</p>
+      </div>
+    </div>
+
+    <div class="footer__right">
+      <img src="images/logo.png" alt="$PRICELESS Logo">
+    </div>
+  </div>
+</footer>
+<style>
+.mobile-text {
+  transition: opacity 0.5s ease;
+}
+</style>
+
+
+<script src="js/main.js" defer></script>
+<script src="js/translations.js" defer></script>
+
+</body>
+</html>
